@@ -30,7 +30,20 @@ body {
     top: 0px;             /* Position Y de départ */
     border: solid red 
 }
-
+#score{
+    
+        position: absolute;
+        top: 20px;
+        width: 100%;
+        text-align: left;
+        font-size: 40px;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        z-index: 1000;
+        text-shadow: 2px 2px 0 #000; /* Petit contour noir pour lire mieux */
+    
+}
 /* Style du tuyau */
 .obstacle {
     position: absolute; /* OBLIGATOIRE : Pour qu'ils flottent sur le jeu */
