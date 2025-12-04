@@ -6,6 +6,7 @@ const board = document.getElementById("board");
 displayscore = document.getElementById("score");
 displayscore.innerText = "Score : 0";
 testeur = document.createElement("div")
+
 let pipes = []; // Tableau contenant tous les tuyaux
 
 // --- CONSTANTES (Réglages du jeu) ---
@@ -129,9 +130,11 @@ function score(){
         record += 1;
         pipes[0].ispassed = true
         displayscore.innerText = "Score : " +record;
-        PIPE_GAP -= record
+        if(PIPE_GAP>=90)
+        {PIPE_GAP -= 1}
         testeur.innerText = PIPE_GAP
-        displayscore.appendChild(testeur)
+        displayscore.appendChild(testeur) 
+        
     }
 }
 // ==========================================
